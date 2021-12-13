@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#https://cdn.jsdelivr.net/gh/8-diagrams/open_shell/v2ray_auto.sh
 red='\e[91m'
 green='\e[92m'
 yellow='\e[93m'

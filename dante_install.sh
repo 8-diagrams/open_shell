@@ -1,5 +1,7 @@
 # 本脚本适合 centos7 系统直接用dante建立socks5
 # 同时适合 5.10.75-79.358.amzn2.x86_64 
+# curl https://cdn.jsdelivr.net/gh/8-diagrams/open_shell/dante_install.sh
+# bash <(curl -s -L https://cdn.jsdelivr.net/gh/8-diagrams/open_shell/dante_install.sh)
 
 if [ $# -lt 3 ] ; then
 
