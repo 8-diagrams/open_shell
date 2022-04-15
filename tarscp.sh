@@ -51,7 +51,7 @@ if [ $? -eq 0 ] ; then
   echo scp $TMPFN $LOGIN_PATH/${myip}.${dt}.$fn.tgz
 
 /usr/bin/expect <<EOF
-set time 30
+set timeout 300
   spawn scp $TMPFN ${SSH_LOGIN_PATH}/${myip}.${dt}.$fn.tgz
   expect {
     "*yes/no" { send "yes\r"; exp_continue}
