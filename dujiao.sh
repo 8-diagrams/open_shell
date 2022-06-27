@@ -147,3 +147,15 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 
 docker-compose up -d 
+
+echo "
+   请访问 ${app_url}
+
+   数据库地址: db
+   数据库密码: ${mysql_pwd}
+
+   redis地址: redis
+
+   网站url: ${app_url}
+   
+"
