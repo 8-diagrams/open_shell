@@ -72,10 +72,12 @@ def read_pwdSuff():
     print(f"cf dir {pwdsuff}")
     if not os.path.exists( pwdsuff ) :
         print(f"need {pwdsuff!r} created" )
+        raise 'Keybase not found.'
         return ''        
     if os.path.exists( pwdsuff  ) :
         with open(pwdsuff) as f :
             return f.read().strip()
+    raise 'Keybase not found.'
     return ''
 
 def tmp_filename_path(filename):
